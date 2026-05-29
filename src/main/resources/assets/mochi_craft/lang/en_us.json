@@ -1,0 +1,11 @@
+{
+  "tab.mochi_craft.main": "Mochi Craft",
+
+  "item.mochi_craft.choking_item.choke": "Ha! You choked on your Mochi!",
+  "item.mochi_craft.choking_item.burn": "Ha! You got burned on your Mochi!",
+
+  "item.mochi_craft.polishable_item.desc.item.part1" : "Can be polished by using this with some ",
+  "item.mochi_craft.polishable_item.desc.item.part2" : ".",
+  "item.mochi_craft.polishable_item.desc.block.part1" : "Can be polished by using to a ",
+  "item.mochi_craft.polishable_item.desc.block.part2" : "."
+}
