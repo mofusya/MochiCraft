@@ -22,7 +22,7 @@ import java.util.UUID;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class UpgradeToolHelpers {
-    public static void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> component, TooltipFlag flag){
+    public static void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> component, TooltipFlag flag) {
         int sharpen = ModComponents.SHARPEN.get(itemStack);
         component.add(Component.translatable("item.mochi_craft.mochi_tool." + (sharpen > 0 ? "sharpened" : "unsharpened")));
         component.add(Component.empty());
@@ -30,13 +30,17 @@ public class UpgradeToolHelpers {
         component.add(Component.literal("§" + (sharpen == 20 ? "e" : "7") + " " + sharpen + " / 20"));
     }
 
-    public static boolean isFoil(ItemStack itemStack){
+    public static boolean isFoil(ItemStack itemStack) {
         return ModComponents.SHARPEN.get(itemStack) > 0;
     }
 
-    public static void use(Level level, Player player, InteractionHand hand, AtomicReference<InteractionResultHolder<ItemStack>> toReturn){
+    public static void use(Level level, Player player, InteractionHand hand, AtomicReference<InteractionResultHolder<ItemStack>> toReturn) {
         ItemHelpers.duoItemFunction(player.getMainHandItem(), player.getOffhandItem(), ((itemStack, subItemStack) -> {
             if (subItemStack.is(ModItems.MOCHI_UPGRADE_TEMPLATE.get()) && ModComponents.SHARPEN.get(itemStack) < 20) {
+                if (!player.isCreative()) {
+                    if (player.experienceLevel < 30) return false;
+                    player.experienceLevel -= 30;
+                }
                 ModComponents.SHARPEN.add(itemStack);
                 subItemStack.shrink(1);
                 if (player.level().isClientSide) {
@@ -49,7 +53,7 @@ public class UpgradeToolHelpers {
         }));
     }
 
-    public static void getAttributeModifiers(EquipmentSlot slot, ItemStack itemStack, UUID attackDamageUid, UUID attackSpeedUid, ImmutableMultimap.Builder<Attribute, AttributeModifier> builder){
+    public static void getAttributeModifiers(EquipmentSlot slot, ItemStack itemStack, UUID attackDamageUid, UUID attackSpeedUid, ImmutableMultimap.Builder<Attribute, AttributeModifier> builder) {
         if (slot == EquipmentSlot.MAINHAND) {
             int sharpen = ModComponents.SHARPEN.get(itemStack);
             if (sharpen > 20) sharpen = 20;

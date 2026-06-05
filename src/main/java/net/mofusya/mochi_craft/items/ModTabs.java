@@ -8,6 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.mofusya.mochi_craft.MochiCraft;
 import net.mofusya.mochi_craft.blocks.ModBlocks;
+import net.mofusya.mochi_craft.component.ModComponents;
 import net.mofusya.mochi_craft.util.ItemHelpers;
 
 public class ModTabs {
@@ -22,6 +23,10 @@ public class ModTabs {
                         output.acceptAll(ItemHelpers.itemRegistries2ItemStacks(ModItems.ITEMS.getMainItems()));
                         output.acceptAll(ItemHelpers.blockRegistries2ItemStacks(ModBlocks.BLOCKS.getMainBlocks()));
                         output.acceptAll(ItemHelpers.itemRegistries2ItemStacks(ModItems.ITEMS.getItems(1)));
+                        output.acceptAll(ItemHelpers.itemRegistries2ItemStacks(ModItems.ITEMS.getItems(1)).stream().map(itemStack -> {
+                            ModComponents.SHARPEN.set(itemStack, 20);
+                            return itemStack;
+                        }).toList());
                     })
                     .build());
 }

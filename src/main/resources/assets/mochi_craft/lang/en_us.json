@@ -17,7 +17,6 @@
   "item.mochi_craft.soy_bean.polish_tool" : "GrindStone",
   "item.mochi_craft.kinako" : "Kinako",
   "item.mochi_craft.kinako_mochi" : "Kinako Mochi",
-  "item.mochi_craft.melted_mochi" : "Melted Mochi",
 
   "item.mochi_craft.mochi_upgrade_template" : "Smithing Template",
   "item.mochi_craft.mochi_upgrade_template.desc.0" : "§7Mochi Upgrade",
@@ -25,7 +24,7 @@
   "item.mochi_craft.mochi_upgrade_template.desc.2" : "§7Applies to:",
   "item.mochi_craft.mochi_upgrade_template.desc.3" : "§9 Mochi Equipment",
   "item.mochi_craft.mochi_upgrade_template.desc.4" : "§7Ingredients:",
-  "item.mochi_craft.mochi_upgrade_template.desc.5" : "§9 Compressed Mochi Blocks",
+  "item.mochi_craft.mochi_upgrade_template.desc.5" : "§9 30 Levels",
 
   "item.mochi_craft.mochi_sword" : "Mochi Sword",
   "item.mochi_craft.mochi_pickaxe" : "Mochi Pickaxe",
@@ -48,5 +47,10 @@
   "item.mochi_craft.polishable_item.desc.item.part1" : "Can be polished by using this with some ",
   "item.mochi_craft.polishable_item.desc.item.part2" : ".",
   "item.mochi_craft.polishable_item.desc.block.part1" : "Can be polished by using to a ",
-  "item.mochi_craft.polishable_item.desc.block.part2" : "."
+  "item.mochi_craft.polishable_item.desc.block.part2" : ".",
+
+  "advancements.mochi_craft.root": "Mochi Craft",
+  "advancements.mochi_craft.root.desc": "",
+  "advancements.mochi_craft.sample": "Here's your sample Mochi",
+  "advancements.mochi_craft.sample.desc": "A bit of it"
 }

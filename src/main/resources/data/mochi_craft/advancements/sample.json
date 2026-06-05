@@ -1,0 +1,29 @@
+{
+  "parent": "mochi_craft:root",
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "mochi_craft:bit_of_mochi"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.mochi_craft.sample"
+    },
+    "description": {
+      "translate": "advancements.mochi_craft.sample.desc"
+    }
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "loot": [
+      "mochi_craft:rewards/sample"
+    ]
+  },
+  "sends_telemetry_event": true
+}

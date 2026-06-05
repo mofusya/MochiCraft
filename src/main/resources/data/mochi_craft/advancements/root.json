@@ -1,0 +1,24 @@
+{
+  "display": {
+    "announce_to_chat": false,
+    "background": "mochi_craft:textures/block/mochi_block.png",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "mochi_craft:cut_mochi"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.mochi_craft.root"
+    },
+    "description": {
+      "translate": "advancements.mochi_craft.root.desc"
+    }
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "sends_telemetry_event": true
+}

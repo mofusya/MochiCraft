@@ -8,6 +8,7 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.registries.RegistryObject;
 import net.mofusya.mochi_craft.MochiCraft;
 import net.mofusya.mochi_craft.blocks.block.QuadCropBlock;
+import net.mofusya.mochi_craft.blocks.block.StickyBlock;
 import net.mofusya.mochi_craft.items.ModItems;
 import net.mofusya.ornatelib.registries.OrnateBlockDeferredRegister;
 
@@ -19,7 +20,7 @@ public class ModBlocks {
             .blockBuild(BlockBehaviour.Properties.of().noOcclusion().noCollission().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)), 1
     );
 
-    public static final RegistryObject<Block> MOCHI_BLOCK = BLOCKS.register("mochi_block", new OrnateBlockDeferredRegister.Builder().blockBuildRef(Blocks.SLIME_BLOCK));
+    public static final RegistryObject<Block> MOCHI_BLOCK = BLOCKS.register("mochi_block", new OrnateBlockDeferredRegister.Builder().blockBuildRef(Blocks.SLIME_BLOCK).blockFunc(StickyBlock::new));
     public static final RegistryObject<Block> MOCHI_BLOCK_X9 = BLOCKS.register("mochi_block_x9", new OrnateBlockDeferredRegister.Builder().blockBuildRef(Blocks.SLIME_BLOCK));
     public static final RegistryObject<Block> MOCHI_BLOCK_X81 = BLOCKS.register("mochi_block_x81", new OrnateBlockDeferredRegister.Builder().blockBuildRef(Blocks.SLIME_BLOCK));
     public static final RegistryObject<Block> MOCHI_BLOCK_X729 = BLOCKS.register("mochi_block_x729", new OrnateBlockDeferredRegister.Builder().blockBuildRef(Blocks.SLIME_BLOCK));
