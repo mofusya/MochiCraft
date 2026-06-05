@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "mochi_upgrade_templates",
+  "pattern": [
+    "DTD",
+    "D#D",
+    "DDD"
+  ],
+  "key": {
+    "T": {
+      "item": "mochi_craft:mochi_upgrade_template"
+    },
+    "#": {
+      "item": "mochi_craft:mochi_block_x81"
+    },
+    "D": {
+      "item" : "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "mochi_craft:mochi_upgrade_template"
+  }
+}

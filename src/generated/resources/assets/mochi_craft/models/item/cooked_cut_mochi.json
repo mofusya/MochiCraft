@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mochi_craft:item/cooked_cut_mochi"
+  }
+}

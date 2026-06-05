@@ -1,0 +1,13 @@
+// 1.20.1	2026-05-31T11:32:45.0062481	Block States: mochi_craft
+9732cf8beece0f3691cdb1685c7fa0d45c437377 assets/mochi_craft/blockstates/mochi_block.json
+a9d99b3d405cbeffc04561069d444c5680da42ba assets/mochi_craft/blockstates/mochi_block_x729.json
+c89a265eb5d9303703529863a9895e110f883da4 assets/mochi_craft/blockstates/mochi_block_x81.json
+915f6173e0323ef4fb0dd7fa6243ca7b14ed4413 assets/mochi_craft/blockstates/mochi_block_x9.json
+dc0758545e32348f3e5fa187d6cf9965e973cea4 assets/mochi_craft/models/block/mochi_block.json
+aa3e301f3c7acdcb58bd0da7a7cee8bfba923e9d assets/mochi_craft/models/block/mochi_block_x729.json
+5b67a2d1072d21915fef778a9c6a72c1226938a3 assets/mochi_craft/models/block/mochi_block_x81.json
+58dc3f1970b938468fed08777c6b30e815410ac0 assets/mochi_craft/models/block/mochi_block_x9.json
+85d5a9c05e0b62c9acf99fd2c3ac2b4a883d8dd9 assets/mochi_craft/models/item/mochi_block.json
+126cc135b45669375651e05d14851978359e31bf assets/mochi_craft/models/item/mochi_block_x729.json
+e8dd367c52a8c4dbdab5e104132d2236e0193bf9 assets/mochi_craft/models/item/mochi_block_x81.json
+fcf0ac1828d9df434e4c52100e10cb1512425c88 assets/mochi_craft/models/item/mochi_block_x9.json

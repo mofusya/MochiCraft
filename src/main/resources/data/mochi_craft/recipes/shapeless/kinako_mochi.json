@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mochi_craft:mochi"
+    },
+    {
+      "item": "mochi_craft:kinako"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "mochi_craft:kinako_mochi"
+  }
+}

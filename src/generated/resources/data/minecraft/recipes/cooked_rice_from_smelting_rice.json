@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "has_cooked_rice",
+  "ingredient": {
+    "item": "mochi_craft:rice"
+  },
+  "result": "mochi_craft:cooked_rice"
+}

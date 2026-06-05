@@ -19,6 +19,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.mofusya.mochi_craft.util.ItemHelpers;
+import org.apache.logging.log4j.util.TriConsumer;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -34,29 +35,46 @@ public class PolishableItem extends Item {
     @Nullable
     private final TagKey<Block> polishingBlockTag;
     private final Supplier<ItemStack> result;
+    @Nullable
+    private final TriConsumer<Level, Player, ItemStack> func;
 
     public PolishableItem(Properties build, @NotNull Ingredient polishingTool, Supplier<ItemStack> result) {
+        this(build, polishingTool, result, null);
+    }
+
+    public PolishableItem(Properties build, @NotNull Block polishingBlock, Supplier<ItemStack> result) {
+        this(build, polishingBlock, result, null);
+    }
+
+    public PolishableItem(Properties build, @NotNull TagKey<Block> polishingBlockTag, Supplier<ItemStack> result) {
+        this(build, polishingBlockTag, result, null);
+    }
+
+    public PolishableItem(Properties build, @NotNull Ingredient polishingTool, Supplier<ItemStack> result, @Nullable TriConsumer<Level, Player, ItemStack> func) {
         super(build);
         this.polishingTool = polishingTool;
         this.polishingBlock = null;
         this.polishingBlockTag = null;
         this.result = result;
+        this.func = func;
     }
 
-    public PolishableItem(Properties build, @NotNull Block polishingBlock, Supplier<ItemStack> result) {
+    public PolishableItem(Properties build, @NotNull Block polishingBlock, Supplier<ItemStack> result, @Nullable TriConsumer<Level, Player, ItemStack> func) {
         super(build);
         this.polishingBlock = polishingBlock;
         this.polishingTool = null;
         this.polishingBlockTag = null;
         this.result = result;
+        this.func = func;
     }
 
-    public PolishableItem(Properties build, @NotNull TagKey<Block> polishingBlockTag, Supplier<ItemStack> result) {
+    public PolishableItem(Properties build, @NotNull TagKey<Block> polishingBlockTag, Supplier<ItemStack> result, @Nullable TriConsumer<Level, Player, ItemStack> func) {
         super(build);
         this.polishingBlockTag = polishingBlockTag;
         this.polishingTool = null;
         this.polishingBlock = null;
         this.result = result;
+        this.func = func;
     }
 
     @Override
@@ -70,6 +88,7 @@ public class PolishableItem extends Item {
                 pItemStack.shrink(1);
                 player.addItem(this.getResult());
                 toReturn.set(InteractionResultHolder.success(pItemStack));
+                if (this.func != null) this.func.accept(level, player, pItemStack);
                 return true;
             }
             toReturn.set(super.use(level, player, hand));
@@ -92,9 +111,11 @@ public class PolishableItem extends Item {
         if (this.getPolishingBlock() != null && state.is(this.getPolishingBlock())) {
             itemStack.shrink(1);
             player.addItem(this.getResult());
+            if (this.func != null) this.func.accept(level, player, itemStack);
         } else if (this.getPolishingBlockTag() != null && state.is(this.getPolishingBlockTag())) {
             itemStack.shrink(1);
             player.addItem(this.getResult());
+            if (this.func != null) this.func.accept(level, player, itemStack);
         }
         return super.useOn(context);
     }
@@ -115,7 +136,7 @@ public class PolishableItem extends Item {
         } else {
             component.add(Component.translatable("item.mochi_craft.polishable_item.desc.block.part1").withStyle(ChatFormatting.DARK_GRAY)
                     .append(itemPolishTool)
-                    .append(Component.translatable("item.mochi_craft.polishable_item.desc.block.part1").withStyle(ChatFormatting.DARK_GRAY)));
+                    .append(Component.translatable("item.mochi_craft.polishable_item.desc.block.part2").withStyle(ChatFormatting.DARK_GRAY)));
         }
     }
 

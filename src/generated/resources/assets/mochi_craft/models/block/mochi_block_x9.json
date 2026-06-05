@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mochi_craft:block/mochi_block_x9"
+  }
+}

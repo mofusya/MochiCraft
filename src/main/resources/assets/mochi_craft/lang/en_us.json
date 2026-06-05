@@ -1,6 +1,47 @@
 {
   "tab.mochi_craft.main": "Mochi Craft",
 
+  "item.mochi_craft.unpolished_rice" : "Unpolished Rice",
+  "item.mochi_craft.unpolished_rice.polish_tool" : "Swords",
+  "item.mochi_craft.rice" : "Rice",
+  "item.mochi_craft.cooked_rice" : "Coked Rice",
+  "item.mochi_craft.bit_of_mochi": "Bit of Mochi",
+  "item.mochi_craft.mochi" : "Mochi",
+  "item.mochi_craft.mochi.polish_tool" : "Swords",
+  "item.mochi_craft.cut_mochi" : "Cut Mochi",
+  "item.mochi_craft.cooked_cut_mochi" : "Cooked Cut Mochi",
+  "item.mochi_craft.well_cooked_cut_mochi" : "Well Cooked Cut Mochi",
+  "item.mochi_craft.overcooked_cut_mochi" : "Overcooked Cut Mochi",
+  "item.mochi_craft.carbon" : "Carbon",
+  "item.mochi_craft.soy_bean" : "Soy Bean",
+  "item.mochi_craft.soy_bean.polish_tool" : "GrindStone",
+  "item.mochi_craft.kinako" : "Kinako",
+  "item.mochi_craft.kinako_mochi" : "Kinako Mochi",
+  "item.mochi_craft.melted_mochi" : "Melted Mochi",
+
+  "item.mochi_craft.mochi_upgrade_template" : "Smithing Template",
+  "item.mochi_craft.mochi_upgrade_template.desc.0" : "§7Mochi Upgrade",
+  "item.mochi_craft.mochi_upgrade_template.desc.1" : "",
+  "item.mochi_craft.mochi_upgrade_template.desc.2" : "§7Applies to:",
+  "item.mochi_craft.mochi_upgrade_template.desc.3" : "§9 Mochi Equipment",
+  "item.mochi_craft.mochi_upgrade_template.desc.4" : "§7Ingredients:",
+  "item.mochi_craft.mochi_upgrade_template.desc.5" : "§9 Compressed Mochi Blocks",
+
+  "item.mochi_craft.mochi_sword" : "Mochi Sword",
+  "item.mochi_craft.mochi_pickaxe" : "Mochi Pickaxe",
+  "item.mochi_craft.mochi_axe" : "Mochi Axe",
+  "item.mochi_craft.mochi_shovel" : "Mochi Shovel",
+  "item.mochi_craft.mochi_hoe" : "Mochi Hoe",
+
+  "item.mochi_craft.mochi_tool.unsharpened": "§7Unsharpened",
+  "item.mochi_craft.mochi_tool.sharpened": "§5Sharpened",
+  "item.mochi_craft.mochi_tool.sharpen": "§7Sharpen:",
+
+  "block.mochi_craft.mochi_block" : "Mochi Block",
+  "block.mochi_craft.mochi_block_x9" : "Compressed Mochi Block - X9",
+  "block.mochi_craft.mochi_block_x81" : "Compressed Mochi Block - X81",
+  "block.mochi_craft.mochi_block_x729" : "Compressed Mochi Block - X729",
+
   "item.mochi_craft.choking_item.choke": "Ha! You choked on your Mochi!",
   "item.mochi_craft.choking_item.burn": "Ha! You got burned on your Mochi!",
 

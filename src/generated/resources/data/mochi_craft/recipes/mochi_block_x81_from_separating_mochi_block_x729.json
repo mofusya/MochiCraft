@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mochi_craft:mochi_block_x729"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "mochi_craft:mochi_block_x81"
+  }
+}

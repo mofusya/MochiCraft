@@ -12,7 +12,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import org.apache.logging.log4j.util.TriConsumer;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
@@ -24,13 +26,28 @@ public class PolishableChokingItem extends PolishableItem{
         this.percentage = percentage;
     }
 
+    public PolishableChokingItem(Properties build, @NotNull Block polishingBlock, Supplier<ItemStack> result, @Nullable TriConsumer<Level, Player, ItemStack> func, int percentage) {
+        super(build, polishingBlock, result, func);
+        this.percentage = percentage;
+    }
+
     public PolishableChokingItem(Properties build, @NotNull TagKey<Block> polishingBlockTag, Supplier<ItemStack> result, int percentage) {
         super(build, polishingBlockTag, result);
         this.percentage = percentage;
     }
 
+    public PolishableChokingItem(Properties build, @NotNull TagKey<Block> polishingBlockTag, Supplier<ItemStack> result, @Nullable TriConsumer<Level, Player, ItemStack> func, int percentage) {
+        super(build, polishingBlockTag, result, func);
+        this.percentage = percentage;
+    }
+
     public PolishableChokingItem(Properties build, @NotNull Ingredient polishingTool, Supplier<ItemStack> result, int percentage) {
         super(build, polishingTool, result);
+        this.percentage = percentage;
+    }
+
+    public PolishableChokingItem(Properties build, @NotNull Ingredient polishingTool, Supplier<ItemStack> result, @Nullable TriConsumer<Level, Player, ItemStack> func, int percentage) {
+        super(build, polishingTool, result, func);
         this.percentage = percentage;
     }
 

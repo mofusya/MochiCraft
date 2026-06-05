@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:overcooked_cut_mochi_from_campfire_cooking_well_cooked_cut_mochi"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_well_cooked_cut_mochi": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mochi_craft:well_cooked_cut_mochi"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_well_cooked_cut_mochi",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:overcooked_cut_mochi_from_campfire_cooking_well_cooked_cut_mochi"
+    ]
+  },
+  "sends_telemetry_event": false
+}

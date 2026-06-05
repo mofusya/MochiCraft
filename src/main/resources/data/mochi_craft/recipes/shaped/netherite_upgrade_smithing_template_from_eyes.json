@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DTD",
+    "D#D",
+    "DDD"
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:ender_chest"
+    },
+    "#": {
+      "item": "minecraft:nether_bricks"
+    },
+    "D": {
+      "item" : "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

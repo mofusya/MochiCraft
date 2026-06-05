@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "has_cooked_cut_mochi",
+  "ingredient": {
+    "item": "mochi_craft:cut_mochi"
+  },
+  "result": "mochi_craft:cooked_cut_mochi"
+}

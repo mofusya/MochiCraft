@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mochi_craft:block/mochi_block"
+    }
+  }
+}

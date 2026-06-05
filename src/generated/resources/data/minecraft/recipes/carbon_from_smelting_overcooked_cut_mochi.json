@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "has_carbon",
+  "ingredient": {
+    "item": "mochi_craft:overcooked_cut_mochi"
+  },
+  "result": "mochi_craft:carbon"
+}
