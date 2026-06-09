@@ -17,6 +17,8 @@
   "item.mochi_craft.soy_bean.polish_tool" : "GrindStone",
   "item.mochi_craft.kinako" : "Kinako",
   "item.mochi_craft.kinako_mochi" : "Kinako Mochi",
+  "item.mochi_craft.molten_mochi" : "Molten Mochi",
+  "item.mochi_craft.mochi_gas" : "Mochi Gas",
 
   "item.mochi_craft.mochi_upgrade_template" : "Smithing Template",
   "item.mochi_craft.mochi_upgrade_template.desc.0" : "§7Mochi Upgrade",

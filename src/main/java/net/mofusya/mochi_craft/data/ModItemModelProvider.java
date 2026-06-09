@@ -21,6 +21,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         ArrayList<RegistryObject<Item>> registries = new ArrayList<>();
 
         registries.addAll(ModItems.ITEMS.getMainItems());
+        registries.remove(ModItems.MOLTEN_MOCHI);
+        registries.remove(ModItems.MOCHI_GAS);
 
         for (var item : registries) {
             this.simpleItem(item);

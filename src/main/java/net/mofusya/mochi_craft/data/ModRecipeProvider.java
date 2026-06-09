@@ -28,6 +28,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         foodSmelting(writer, ModItems.COOKED_CUT_MOCHI.get(), ModItems.WELL_COOKED_CUT_MOCHI.get());
         foodSmelting(writer, ModItems.WELL_COOKED_CUT_MOCHI.get(), ModItems.OVERCOOKED_CUT_MOCHI.get());
         foodSmelting(writer, ModItems.OVERCOOKED_CUT_MOCHI.get(), ModItems.CARBON.get());
+        foodSmelting(writer, ModItems.MOLTEN_MOCHI.get(), ModItems.MOCHI_GAS.get());
 
         compressing(writer, ModItems.BIT_OF_MOCHI.get(), ModItems.MOCHI.get(), true);
         compressing(writer, ModItems.MOCHI.get(), ModBlocks.MOCHI_BLOCK.get(), false);

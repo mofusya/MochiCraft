@@ -64,6 +64,12 @@ public class ModItems {
     public static final RegistryObject<Item> KINAKO_MOCHI = ITEMS.register("kinako_mochi", build -> new ChokingItem(build, 20),
             new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(2f).build()));
 
+    public static final RegistryObject<Item> MOLTEN_MOCHI = ITEMS.register("molten_mochi", build -> new HoneyLikeBottleDrinkingItem(build, 40),
+            new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationMod(0.25f).build()).stacksTo(4));
+
+    public static final RegistryObject<Item> MOCHI_GAS = ITEMS.register("mochi_gas", build -> new HoneyLikeBottleDrinkingItem(build, 40),
+            new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationMod(0.5f).build()).stacksTo(4));
+
     public static final RegistryObject<Item> MOCHI_UPGRADE_TEMPLATE = ITEMS.register("mochi_upgrade_template", build -> new MultiDescriptionItem(build, 6));
 
     public static final ToolSet MOCHI_TOOLS = ITEMS.register("mochi",
